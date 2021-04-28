@@ -3,6 +3,7 @@ const cors = require('cors');
 const morgan = require('morgan');
 const connection = require('./config/databaseConfig');
 const authRouter = require('./routes/authRoute');
+const quizRouter = require('./routes/quizRoute');
 const passport = require('./config/passportConfig');
 
 const app = express();
@@ -26,6 +27,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(passport.initialize());
 
 app.use('/', authRouter);
+app.use('/quizzes', quizRouter);
 
 connection.once("open", () => {
     console.log("MongoDB database connection established successfully");

@@ -78,7 +78,15 @@ const loginUser = (req, res, next) => {
         });
 }
 
+const getAllUsers = async(req, res, next) => {
+    User.find()
+        .then((users) => {
+            return res.json(users);
+        }).catch((err) => next(err));
+}
+
 module.exports = {
     registerUser,
     loginUser,
+    getAllUsers
 }

@@ -3,6 +3,7 @@ const authController = require('../controllers/authController');
 const passport = require('../config/passportConfig');
 const router = express.Router();
 
+router.get('/users', authController.getAllUsers);
 router.post('/register', authController.registerUser);
 
 
