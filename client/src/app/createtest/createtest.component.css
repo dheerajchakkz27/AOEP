@@ -1,0 +1,72 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #2277e9;
+  color: white;
+  padding-left: 3vw;
+  height: 6vh;
+  padding-top: 2vh;
+  padding-right: 2vw;
+  font-size: large;
+}
+.logoutbtn {
+  /* padding: 2px;*/
+  height: 25px;
+  width: 7vw;
+  background-color: #13bd51;
+  color: white;
+  float: right;
+}
+.logoutbtn:hover {
+  border-color: black;
+  color: black;
+}
+
+.secnav {
+  background-color: #3cd375;
+  color: white;
+  padding-left: 3vw;
+  height: 4vh;
+  padding-top: 2vh;
+  padding-right: 2vw;
+  font-size: 15px;
+}
+a {
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+a:hover {
+  color: black;
+}
+.page {
+  margin-top: 30px;
+  margin-left: 15vw;
+  border: solid black 1px;
+  width: 70vw;
+  height: 15vh;
+}
+.pagehead {
+  background-color: #7e8982;
+  color: white;
+  font-size: 20px;
+}
+.addques {
+  background-color: #4aa9e7;
+  color: white;
+  margin-left: 20px;
+  margin-top: 10px;
+  height: 25px;
+}
+.addpage {
+  color: white;
+  background-color: #13bd51;
+  width: 20vw;
+  height: 35px;
+  margin-top: 20px;
+  margin-left: 40vw;
+  border-radius: 5px;
+}

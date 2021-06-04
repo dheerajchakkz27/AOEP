@@ -1,0 +1,80 @@
+.container {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #006aa5;
+  color: white;
+  padding-left: 3vw;
+  height: 6vh;
+  padding-top: 2vh;
+  padding-right: 2vw;
+  font-size: large;
+}
+.logoutbtn {
+  /* padding: 2px;*/
+  height: 25px;
+  width: 7vw;
+  background-color: #13bd51;
+  color: white;
+  float: right;
+  font-size: 12px;
+}
+.logoutbtn:hover {
+  border-color: black;
+  color: black;
+}
+
+.ctb {
+  margin-top: 30px;
+}
+
+.createtestbtn {
+  height: 50px;
+  width: 20vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 40%;
+  font-size: 20px;
+  background-color: #8a9a90;
+  color: white;
+  border-radius: 5px;
+}
+.testhead {
+  background-color: #8a9a90;
+  color: white;
+  margin-top: 110px;
+  width: 75vw;
+  margin-left: 12.5vw;
+  height: 30px;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-top: 8px;
+}
+.tests {
+  margin-top: 15px;
+  width: 75vw;
+  margin-left: 12.4vw;
+  height: 30px;
+  font-size: 15px;
+  padding-left: 10px;
+  padding-top: 8px;
+  /*border-color: black;*/
+  border: solid black 2px;
+  /*padding-right: 15vw;*/
+}
+.status {
+  float: right;
+  padding-right: 3vw;
+  margin-top: 2px;
+}
+.resultbtn {
+  background-color: #13bd51;
+}
+.resultbtn:hover {
+  background-color: #8a9a90;
+  color: white;
+}
