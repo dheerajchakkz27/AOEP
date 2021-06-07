@@ -1,4 +1,6 @@
 const Quiz = require('../models/quizModel');
+const Participant = require('../models/participantModel');
+const helper = require('../services/helper');
 
 const getAllQuizzes = async(req, res, next) => {
     Quiz.find({ isEnabled: false })
@@ -40,9 +42,40 @@ const deleteQuiz = async(req, res, next) => {
         }, (err) => next(err)).catch((err) => next(err));
 }
 
+const addParticipants = async(req, res, next) => {
+    let participants = helper.createParticipants(req.body.emails, req.params.quizId);
+    console.log(participants);
+    Participant.collection.insertMany(participants)
+        .then((docs) => {
+            Quiz.updateOne({ _id: req.params.quizId }, { $addToSet: { participants: req.body.emails } })
+                .then((doc) => {
+                    console.log(doc);
+                    res.json(docs);
+                })
+                .catch((err) => {
+                    res.json(err);
+                })
+        })
+        .catch((err) => {
+            res.json(err);
+        })
+}
+
+const getParticipants = async(req, res, next) => {
+    Quiz.findById(req.params.quizId)
+        .then((doc) => {
+            res.json(doc.participants)
+        })
+        .catch((err) => {
+            res.json(err);
+        });
+}
+
 module.exports = {
     getAllQuizzes,
     createQuiz,
     getQuiz,
-    deleteQuiz
+    deleteQuiz,
+    addParticipants,
+    getParticipants,
 }

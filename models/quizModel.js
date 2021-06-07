@@ -56,6 +56,9 @@ const quizSchema = new Schema({
             default: 0
         }
 
+    },
+    participants: {
+        type: Array
     }
 }, {
     timestamps: true

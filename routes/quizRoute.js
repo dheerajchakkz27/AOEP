@@ -1,5 +1,6 @@
 const express = require('express');
 const quizController = require('../controllers/quizController');
+const quizAttemptController = require('../controllers/quizAttemptController');
 const passport = require('../config/passportConfig');
 const router = express.Router();
 
@@ -32,5 +33,15 @@ router.route('/:quizId')
             req.params.quizId);
     })
     .delete(passport.authenticate('jwt', { session: false }), quizController.deleteQuiz);
+
+
+router.route('/:quizId/participants')
+    .get(quizController.getParticipants);
+
+router.route('/:quizId/addParticipants')
+    .post(quizController.addParticipants);
+
+router.route('/:quizId/attempt/:userId')
+    .put(quizAttemptController.answer);
 
 module.exports = router;
