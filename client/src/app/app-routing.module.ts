@@ -6,7 +6,7 @@ import { LoginComponent } from './login/login.component';
 import { AppComponent } from './app.component';
 import { CreatetestComponent } from './createtest/createtest.component';
 import {CreatetestDetailComponent} from './createtest-detail/createtest-detail.component';
-
+import {StudentDashboardComponent} from './student-dashboard/student-dashboard.component';
 
 const routes: Routes = [
   {
@@ -15,7 +15,8 @@ const routes: Routes = [
       { path: "login", component: LoginComponent },
       {path:"dashboard",component:DashboardComponent},
       {path:"createtest",component:CreatetestComponent},
-      {path:"testdetail",component: CreatetestDetailComponent}
+      {path:"testdetail",component: CreatetestDetailComponent},
+      {path:"studentdashboard",component:StudentDashboardComponent}
     ]
   }
 ];
