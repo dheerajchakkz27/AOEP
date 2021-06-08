@@ -1,0 +1,133 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+
+    background-color:#2277E9;
+    color: white;
+    padding-left: 3vw;
+    height: 6vh;
+    padding-top: 2vh;
+    padding-right: 2vw;
+    font-size: large;
+    
+}
+.logoutbtn{
+    /* padding: 2px;*/
+    height: 25px;
+     width: 7vw;
+     background-color: #13BD51;
+     color: white;
+ }
+ .logoutbtn:hover{
+     border-color: black;
+     color: black;
+ }
+
+ .secnav{
+    background-color:#3CD375;
+    color: black;
+    padding-left: 40vw;
+    height: 4vh;
+    padding-top: 2vh;
+    padding-right: 2vw;
+    font-size: 15px;
+    
+}
+
+.livetests{
+    margin-top: 30px;
+    margin-left: 10vw;
+    /*border: solid black 1px;*/
+    width: 80vw;
+    /*height: 40vh;*/
+}
+
+.livetesthead{
+    background-color: #7E8982;
+    color: white;
+    font-size: 20px;
+    padding: 10px 0px 5px 10px ;
+}
+
+
+.testbox{
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    background-color:#2277E9;
+    height: 20vh;
+    width: 13vw;
+    text-align: center;
+ 
+}
+
+.testbox2{
+    position: absolute;
+    left: 28%;
+    top: 24%;
+    margin-left: 30px;
+    margin-top: 30px;
+    font-size: 20px;
+    color: white;
+    background-color:#2277E9;
+    height: 20vh;
+    width: 13vw;
+    text-align: center;
+ 
+}
+.cntr{
+    padding: 30%;
+}
+
+.testbtn{
+    position: absolute;
+    left: 16.5%;
+    top: 42%;
+    
+    background-color: #13BD51;
+    color: white;
+    border: solid 1px #13BD51;
+}
+
+.testbtn2{
+    position: absolute;
+    left: 32%;
+    top: 66%;
+    
+    background-color: #13BD51;
+    color: white;
+    border: solid 1px #13BD51;
+}
+
+.testbtn:hover{
+    background-color: red;
+}
+
+.testbtn2:hover{
+    background-color: red;
+}
+.completed{
+    margin-top: 50px;
+    margin-left: 10vw;
+    width: 80vw;
+}
+
+.ctd{
+    margin-top: 25px;
+    margin-left:25px;
+    border: solid black 2px;
+    height: 30px;
+    width: 75vw;
+    padding-top: 8px;
+    padding-left: 10px;
+    color: #2277E9;
+}
+
+.status{
+    float: right;
+    padding-right: 3vw;
+}
