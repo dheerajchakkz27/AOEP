@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Test Details</title>
+    <link rel="stylesheet" href="./testdetails.css">
+</head>
+<body>
+    <div class='navbar'>
+        ONLINE EXAM PORTAL
+     <input type="button" class="logoutbtn" value="LOG OUT" style="float: right;">
+    </div>
+    <div class="secnav">
+        ADDING TEST DETAILS
+    </div>
+    <div class="testdetform">
+        <div class="testhead">
+            CREATE TEST
+        </div>
+        <form class="formt">
+            <label for="type">TEST TYPE:&emsp;&emsp;&emsp;&nbsp;</label>&emsp;
+            <input type="radio" id="MCQ" name="test type" value="MCQ">
+            <label for="MCQ">MCQ&emsp;</label>&emsp;
+            <input type="radio" id="One word" name="test type" value="One word">
+            <label for="One word">One Word&emsp;</label> &emsp;
+            <input type="radio" id="Subjective" name="test type" value="Subjective">
+            <label for="Subjective">Subjective</label><br><br>
+            <label for="totmark">TOTAL MARK:&emsp;&emsp;&emsp;&nbsp;</label>
+            <input type="number" id="totalmark" name="totalmark" min="10" max="100" step="10"><br><br>
+            <label for="testdate">DATE:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+            <input type="date" id="testdate" name="testdate"><br><br>
+            <label for="testtime">TIME:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+            <input type="time" id="testtime" name="testtime"><br><br>
+            <label for="duration">DURATION:&emsp;&emsp;&emsp;&emsp;&nbsp;</label>
+            <input type="number" id="duration" name="duration" min="30" max="180" step="15"><br>
+            (in minutes)<br><br>
+            <label for="batch">BATCH:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+            <input type="text" id="batch" name="batch"><br><br>
+            <input type="button" class="testlaunch" value="Launch Test">
+        </form>
+    </div>
+</body>
+</html>
