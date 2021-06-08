@@ -5,6 +5,8 @@ import { RegisterComponent } from './register/register.component';
 import { LoginComponent } from './login/login.component';
 import { AppComponent } from './app.component';
 import { CreatetestComponent } from './createtest/createtest.component';
+import {CreatetestDetailComponent} from './createtest-detail/createtest-detail.component';
+
 
 const routes: Routes = [
   {
@@ -12,7 +14,8 @@ const routes: Routes = [
       { path: "", component: RegisterComponent },
       { path: "login", component: LoginComponent },
       {path:"dashboard",component:DashboardComponent},
-      {path:"createtest",component:CreatetestComponent}
+      {path:"createtest",component:CreatetestComponent},
+      {path:"testdetail",component: CreatetestDetailComponent}
     ]
   }
 ];

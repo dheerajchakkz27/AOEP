@@ -1,0 +1,36 @@
+<div class='navbar'>
+    ONLINE EXAM PORTAL
+ <button class="logoutbtn">Logout</button>
+</div>
+<div class="secnav">
+    ADDING TEST DETAILS
+</div>
+<div class="testdetform">
+    <div class="testhead">
+        CREATE TEST
+    </div>
+    <form class="formt">
+        <label for="type">TEST TYPE:</label>
+            <input type="radio" id="MCQ" name="test type" value="MCQ">
+            <label for="MCQ">MCQ</label>
+            <input type="radio" id="One word" name="test type" value="One word">
+            <label for="One word">One Word&emsp;</label> &emsp;
+            <input type="radio" id="Subjective" name="test type" value="Subjective">
+            <label for="Subjective">Subjective</label><br><br>
+        
+        
+        <label for="totmark">TOTAL MARK:&emsp;&emsp;&emsp;&nbsp;</label>
+        <input type="number" id="totalmark" name="totalmark" min="10" max="100" step="10"><br><br>
+        <label for="testdate">DATE:</label>
+        <input type="date" id="testdate" name="testdate"><br><br>
+        <label for="testtime">TIME:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+        <input type="time" id="testtime" name="testtime"><br><br>
+        <label for="duration">DURATION:&emsp;&emsp;&emsp;&emsp;&nbsp;</label>
+        <input type="number" id="duration" name="duration" min="30" max="180" step="15"><br>
+        (in minutes)<br><br>
+        <label for="batch">BATCH:&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</label>
+        <input type="text" id="batch" name="batch"><br><br>
+        <button class="testlaunch">Launch Test</button>
+    </form>
+</div>
+

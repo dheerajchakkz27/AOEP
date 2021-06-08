@@ -1,0 +1,78 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #2277e9;
+  color: white;
+  padding-left: 3vw;
+  height: 6vh;
+  padding-top: 2vh;
+  padding-right: 2vw;
+  font-size: large;
+}
+.logoutbtn {
+  /* padding: 2px;*/
+  height: 25px;
+  width: 7vw;
+  background-color: #13bd51;
+  color: white;
+  float: right;
+}
+.logoutbtn:hover {
+  border-color: black;
+  color: black;
+}
+
+.secnav {
+  background-color: #3cd375;
+  color: black;
+  padding-left: 3vw;
+  height: 4vh;
+  padding-top: 2vh;
+  padding-right: 2vw;
+  font-size: 15px;
+}
+
+.testdetform {
+  margin-top: 30px;
+  margin-left: 15vw;
+  border: solid black 1px;
+  width: 70vw;
+  height: 75vh;
+}
+
+.testhead {
+  background-color: #7e8982;
+  color: white;
+  font-size: 20px;
+  padding: 10px 0px 5px 10px;
+}
+.formt {
+  padding-top: 15px;
+  padding-left: 30px;
+  font-size: 20px;
+  color: #1771ab;
+}
+
+.testlaunch {
+  color: white;
+  background-color: #13bd51;
+  width: 20vw;
+  height: 35px;
+  margin-top: 20px;
+  margin-left: 20vw;
+  font-size: large;
+  position: relative;
+  bottom: 10px;
+  left: 40px;
+}
+.formt input {
+  width: 20%;
+  height: 10px;
+  border: 2px solid rgb(0, 102, 255);
+  border-radius: 4px;
+  position: relative;
+  left: 50px;
+}
