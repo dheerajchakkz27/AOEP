@@ -1,0 +1,138 @@
+.navbar {
+  background-color: #2277e9;
+  color: white;
+  padding-left: 3vw;
+  height: 6vh;
+  padding-top: 2vh;
+  padding-right: 2vw;
+  font-size: large;
+}
+.submitbtn {
+  /* padding: 2px;*/
+  height: 25px;
+  width: 8vw;
+  background-color: #f50505;
+  color: white;
+  float: right;
+}
+
+.submitbtn:hover {
+  transform: scale(1.25);
+}
+
+.instn {
+  display: inline-block;
+  color: black;
+  text-decoration: none;
+  margin-left: 58vw;
+}
+
+.exam {
+  width: 75vw;
+}
+.tlwc {
+  background-color: #f5b705;
+  height: 4vh;
+  padding-top: 2px;
+}
+.tl {
+  float: right;
+  position: relative;
+  right: 70px;
+  top: 3px;
+}
+.qno {
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 22px;
+}
+.qn {
+  font-size: 20px;
+  padding-top: 20px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+}
+.optn {
+  padding-top: 30px;
+  padding-left: 10px;
+  width: 380px;
+}
+
+.prev {
+  height: 30px;
+  color: white;
+  width: 7vw;
+  background-color: #f5b705;
+  border-radius: 4px;
+  position: absolute;
+  left: 10vw;
+  top: 70vh;
+  border: none;
+}
+.next {
+  height: 30px;
+  color: white;
+  width: 7vw;
+  background-color: #f5b705;
+  border-radius: 4px;
+  position: absolute;
+  left: 50vw;
+  top: 70vh;
+  border: none;
+}
+.rs {
+  position: absolute;
+  left: 75vw;
+  top: 8.7vh;
+  width: 23.4vw;
+}
+.vs {
+  height: 30vh;
+  background-color: #7e7a6e;
+  text-align: center;
+}
+.vtxt {
+  padding-top: 30%;
+}
+.ql {
+  background-color: #d1c9b3;
+  height: 62vh;
+}
+/* .qt{
+    height:50vh ;
+    width:20vw;
+    position: absolute;
+    top:44vh;
+    left: 77.5vw;
+    border: solid 1px black;
+    background-color: white;
+} */
+.qb {
+  margin-left: 15px;
+  margin-top: 15px;
+  color: white;
+  background-color: #268a18;
+  height: 40px;
+  width: 40px;
+}
+
+.qbc {
+  margin-left: 15px;
+  margin-top: 15px;
+  color: white;
+  background-color: #f5b705;
+  height: 40px;
+  width: 40px;
+}
+
+.qbw {
+  margin-left: 15px;
+  margin-top: 15px;
+  color: white;
+  background-color: #2277e9;
+  height: 40px;
+  width: 40px;
+}
+.clear {
+  margin-left: 155px;
+}
