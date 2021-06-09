@@ -1,3 +1,4 @@
+import { StudentSubmissionPageComponent } from './student-submission-page/student-submission-page.component';
 import { StudentExamPageComponent } from './student-exam-page/student-exam-page.component';
 import { StudentPhotoAudioComponent } from './student-photo-audio/student-photo-audio.component';
 import { StudentInstructionComponent } from './student-instruction/student-instruction.component';
@@ -24,7 +25,8 @@ const routes: Routes = [
       {path:"studentdetail",component:StudentDetailComponent},
       {path:"studentinstruction",component:StudentInstructionComponent},
       {path:"photoaudio",component:StudentPhotoAudioComponent},
-      {path:"exampage",component:StudentExamPageComponent}
+      {path:"exampage",component:StudentExamPageComponent},
+      {path:"submission",component:StudentSubmissionPageComponent}
     ]
   }
 ];

@@ -14,6 +14,7 @@ import { StudentDetailComponent } from './student-detail/student-detail.componen
 import { StudentInstructionComponent } from './student-instruction/student-instruction.component';
 import { StudentPhotoAudioComponent } from './student-photo-audio/student-photo-audio.component';
 import { StudentExamPageComponent } from './student-exam-page/student-exam-page.component';
+import { StudentSubmissionPageComponent } from './student-submission-page/student-submission-page.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { StudentExamPageComponent } from './student-exam-page/student-exam-page.
     StudentDetailComponent,
     StudentInstructionComponent,
     StudentPhotoAudioComponent,
-    StudentExamPageComponent
+    StudentExamPageComponent,
+    StudentSubmissionPageComponent
   ],
   imports: [
     BrowserModule,
