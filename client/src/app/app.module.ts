@@ -12,6 +12,7 @@ import { CreatetestDetailComponent } from './createtest-detail/createtest-detail
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
 import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { StudentInstructionComponent } from './student-instruction/student-instruction.component';
+import { StudentPhotoAudioComponent } from './student-photo-audio/student-photo-audio.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { StudentInstructionComponent } from './student-instruction/student-instr
     CreatetestDetailComponent,
     StudentDashboardComponent,
     StudentDetailComponent,
-    StudentInstructionComponent
+    StudentInstructionComponent,
+    StudentPhotoAudioComponent
   ],
   imports: [
     BrowserModule,
