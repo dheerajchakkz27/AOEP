@@ -1,0 +1,51 @@
+.navbar {
+  background-color: #2277e9;
+  color: white;
+  padding-left: 3vw;
+  height: 6vh;
+  padding-top: 2vh;
+  padding-right: 2vw;
+  font-size: large;
+}
+.logoutbtn {
+  /* padding: 2px;*/
+  height: 25px;
+  width: 7vw;
+  background-color: #13bd51;
+  color: white;
+  float: right;
+}
+.logoutbtn:hover {
+  border-color: black;
+  color: black;
+}
+.page {
+  margin-top: 30px;
+  margin-left: 15vw;
+  border: solid black 1px;
+  width: 70vw;
+  height: 55vh;
+  color: #2277e9;
+}
+.pagehead {
+  background-color: #7e8982;
+  color: white;
+  font-size: 20px;
+  padding-left: 30vw;
+}
+
+.instruction {
+  margin-top: 30px;
+  margin-left: 20px;
+}
+
+.entertest {
+  color: white;
+  background-color: #13bd51;
+  width: 20vw;
+  height: 35px;
+  margin-top: 20px;
+  margin-left: 40vw;
+  border-radius: 5px;
+  font-size: large;
+}

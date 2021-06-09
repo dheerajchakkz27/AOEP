@@ -1,3 +1,5 @@
+import { StudentInstructionComponent } from './student-instruction/student-instruction.component';
+import { StudentDetailComponent } from './student-detail/student-detail.component';
 import { DashboardComponent } from './dashboard/dashboard.component';
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
@@ -16,7 +18,9 @@ const routes: Routes = [
       {path:"dashboard",component:DashboardComponent},
       {path:"createtest",component:CreatetestComponent},
       {path:"testdetail",component: CreatetestDetailComponent},
-      {path:"studentdashboard",component:StudentDashboardComponent}
+      {path:"studentdashboard",component:StudentDashboardComponent},
+      {path:"studentdetail",component:StudentDetailComponent},
+      {path:"studentinstruction",component:StudentInstructionComponent}
     ]
   }
 ];

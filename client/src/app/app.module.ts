@@ -10,6 +10,8 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { CreatetestComponent } from './createtest/createtest.component';
 import { CreatetestDetailComponent } from './createtest-detail/createtest-detail.component';
 import { StudentDashboardComponent } from './student-dashboard/student-dashboard.component';
+import { StudentDetailComponent } from './student-detail/student-detail.component';
+import { StudentInstructionComponent } from './student-instruction/student-instruction.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,9 @@ import { StudentDashboardComponent } from './student-dashboard/student-dashboard
     DashboardComponent,
     CreatetestComponent,
     CreatetestDetailComponent,
-    StudentDashboardComponent
+    StudentDashboardComponent,
+    StudentDetailComponent,
+    StudentInstructionComponent
   ],
   imports: [
     BrowserModule,
