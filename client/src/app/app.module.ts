@@ -15,6 +15,7 @@ import { StudentInstructionComponent } from './student-instruction/student-instr
 import { StudentPhotoAudioComponent } from './student-photo-audio/student-photo-audio.component';
 import { StudentExamPageComponent } from './student-exam-page/student-exam-page.component';
 import { StudentSubmissionPageComponent } from './student-submission-page/student-submission-page.component';
+import { TeacherResponseComponent } from './teacher-response/teacher-response.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { StudentSubmissionPageComponent } from './student-submission-page/studen
     StudentInstructionComponent,
     StudentPhotoAudioComponent,
     StudentExamPageComponent,
-    StudentSubmissionPageComponent
+    StudentSubmissionPageComponent,
+    TeacherResponseComponent
   ],
   imports: [
     BrowserModule,

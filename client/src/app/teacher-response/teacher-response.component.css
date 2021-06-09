@@ -1,0 +1,87 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.navbar {
+  background-color: #2277e9;
+  color: white;
+  padding-left: 3vw;
+  height: 6vh;
+  padding-top: 2vh;
+  padding-right: 2vw;
+  font-size: large;
+}
+.logoutbtn {
+  /* padding: 2px;*/
+  height: 25px;
+  width: 7vw;
+  background-color: #13bd51;
+  color: white;
+  float: right;
+}
+.logoutbtn:hover {
+  border-color: black;
+  color: black;
+}
+.txtcd {
+  padding-left: 30px;
+  padding-top: 30px;
+}
+
+.secnav {
+  background-color: #3cd375;
+  color: black;
+  padding-left: 5vw;
+  height: 4vh;
+  padding-top: 2vh;
+  padding-right: 2vw;
+  font-size: 15px;
+}
+
+.page {
+  margin-top: 30px;
+  margin-left: 15vw;
+  /* border: solid black 1px; */
+  width: 70vw;
+  height: 50vh;
+  color: #2277e9;
+}
+.pagehead {
+  background-color: #7e8982;
+  color: white;
+  font-size: 20px;
+  padding-left: 27vw;
+}
+.rsps {
+  padding-top: 10px;
+}
+.rsptb {
+  margin-top: 5px;
+  color: black;
+  height: 20px;
+  border: solid 1px #2277e9;
+  width: 70vw;
+}
+.algn {
+  float: right;
+  padding-right: 60px;
+}
+a {
+  display: inline-block;
+  color: #2277e9;
+  text-decoration: none;
+}
+
+.addpage {
+  color: white;
+  background-color: #13bd51;
+  width: 20vw;
+  height: 35px;
+  margin-top: 40px;
+  margin-left: 40vw;
+  border-radius: 5px;
+}
+a {
+  padding-right: 20px;
+}
