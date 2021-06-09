@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.navbar{
+
+    background-color:#2277E9;
+    color: white;
+    padding-left: 3vw;
+    height: 6vh;
+    padding-top: 2vh;
+    padding-right: 2vw;
+    font-size: large;
+    
+}
+.logoutbtn{
+    /* padding: 2px;*/
+    height: 25px;
+     width: 7vw;
+     background-color: #13BD51;
+     color: white;
+ }
+ .logoutbtn:hover{
+     border-color: black;
+     color: black;
+ }
+ .page{
+    margin-top: 30px;
+    margin-left: 15vw;
+    /* border: solid black 1px; */
+    width: 70vw;
+    height: 25vh;
+    color: #2277E9;
+    
+}
+.pagehead{
+    background-color: #7E8982;
+    color: white;
+    font-size: 20px;
+    padding-left: 28vw;
+}
+.addpage{
+    color: white;
+    background-color: #13BD51;
+    width: 20vw;
+    height: 35px;
+    margin-top: 20px;
+    margin-left: 40vw;
+    border-radius: 5px;
+}
+.txt{
+    padding-top: 15vh;
+    padding-left: 18vw;;
+}
+
+.addpage:hover{
+    transform: scale(1.25);
+}
