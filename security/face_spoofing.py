@@ -86,7 +86,7 @@ while True:
                 font = cv2.FONT_HERSHEY_SIMPLEX
                 if tc==1:
                     stop=time.time()
-                    print("the time is:",stop-start)
+                    #print("the time is:",stop-start)
                     if stop-start >5:
                         print('face spoofing detected')
                     tc=0

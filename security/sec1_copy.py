@@ -6,6 +6,7 @@ import wave
 import pickle
 import os
 import aubio
+import keyboard
 from scipy.io.wavfile import read
 from IPython.display import Audio, display, clear_output
 
@@ -41,7 +42,7 @@ def recognize():
     CHANNELS = 2
     RATE = 44100
     CHUNK = 1024
-    RECORD_SECONDS = 4
+    RECORD_SECONDS = 2
     FILENAME = "./test.wav"
 
     audio = pyaudio.PyAudio()
@@ -609,7 +610,7 @@ pA = pyaudio.PyAudio()
 # Open the microphone stream.
 mic = pA.open(format=FORMAT, channels=CHANNELS ,rate=SAMPLE_RATE, input=True,frames_per_buffer=PERIOD_SIZE_IN_FRAME)
 
-# Initiating Aubio's pitch detection object.
+# Initiating o's pitch detection object.
 pDetection = aubio.pitch(METHOD, BUFFER_SIZE,HOP_SIZE, SAMPLE_RATE)
 # Set unit.
 pDetection.set_unit("Hz")
@@ -619,7 +620,10 @@ pDetection.set_silence(-40)
 
 while True:
     ret, imagereal = cap.read()
+    if keyboard.is_pressed('1'):  
+        print('eye is moving up')
     if ret == True:
+
         data = mic.read(PERIOD_SIZE_IN_FRAME)
         # Convert into number that Aubio understand.
         samples = np.fromstring(data,dtype=aubio.float_type)
@@ -629,7 +633,7 @@ while True:
         # of the current frame.
         volume = np.sum(samples**2)/len(samples)
         #print(int(volume*1000))
-        if int(volume*1000)>5:
+        if int(volume*1000)>2:
             recognize()
 
         faces = find_faces(imagereal, face_model)
@@ -672,7 +676,7 @@ while True:
                 else:
                     if tc==1:
                         stop=time.time()
-                        if stop-start >10:
+                        if stop-start >13:
                             warning_count+=1
                             print('face spoofing detected')
                         tc=0
@@ -756,7 +760,7 @@ while True:
                 warning_count+=1
                 break
                 #cv2.putText(imagereal, 'Head right', (90, 30), font, 2, (255, 255, 128), 3)
-            elif ang2 <= -55:
+            elif ang2 <= -52:
                 print('Head left')
                 warning_count+=1
                 break
@@ -782,11 +786,12 @@ while True:
             if mouth_open == 0 and cnt_outer >3 and cnt_inner >2 and speech_checking==1:
                 mouth_open=1
                 speeking_count+=1
-            if speech_checking==1 and time.time()-mstart > 9 :
+            if speech_checking==1 and time.time()-mstart > 5 :
                 mstop=time.time()
                 #print("count is",speeking_count)
-                if speeking_count > 3:
+                if speeking_count > 1:
                     print('speeching detected')
+                    recognize()
                     warning_count+=1
                 speech_checking=0
                 speeking_count=0          
@@ -808,14 +813,17 @@ while True:
                 warning_count+=1
         if count == 0:
             print('No person detected')
-            warning_count==1
+            warning_count+=1
         elif count > 1: 
             print('More than one person detected')
             warning_count+=1
         
         #imagereal = draw_outputs(imagereal, (boxes, scores, classes, nums), class_names)
 
+  
+        
         if cv2.waitKey(1) & 0xFF == ord('q'):
+            print("Total Warning Count is",warning_count)
             break    
     else:
         break

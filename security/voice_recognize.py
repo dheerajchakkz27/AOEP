@@ -16,7 +16,7 @@ def recognize():
     CHANNELS = 2
     RATE = 44100
     CHUNK = 1024
-    RECORD_SECONDS = 4
+    RECORD_SECONDS = 3
     FILENAME = "./test.wav"
 
     audio = pyaudio.PyAudio()
@@ -117,7 +117,7 @@ if __name__ == '__main__':
             # of the current frame.
             volume = np.sum(samples**2)/len(samples)
             #print(int(volume*1000))
-            if int(volume*1000)>10:
+            if int(volume*1000)>5:
                 recognize()
     except KeyboardInterrupt:
         print("stopped")

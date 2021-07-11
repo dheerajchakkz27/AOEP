@@ -43,6 +43,7 @@ speech_checking=0
 while(True):
     ret, img = cap.read()
     rects = find_faces(img, face_model)
+
     for rect in rects:
         shape = detect_marks(img, landmark_model, rect)
         cnt_outer = 0
@@ -68,7 +69,7 @@ while(True):
         if speech_checking==1 and time.time()-mstart > 5 :
             mstop=time.time()
             #print("count is",speeking_count)
-            if speeking_count > 10:
+            if speeking_count > 5:
                 print('speeching detected')
             speech_checking=0
             speeking_count=0
@@ -76,6 +77,7 @@ while(True):
  
         # show the output image with the face detections + facial landmarks
     cv2.imshow("Output", img)
+
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
     
