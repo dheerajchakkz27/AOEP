@@ -620,10 +620,11 @@ pDetection.set_silence(-40)
 
 while True:
     ret, imagereal = cap.read()
-    if keyboard.is_pressed('1'):  
-        print('eye is moving up')
+    
     if ret == True:
-
+        if keyboard.is_pressed("1"):  
+            print(" eye is moving up")
+            warning_count+=1
         data = mic.read(PERIOD_SIZE_IN_FRAME)
         # Convert into number that Aubio understand.
         samples = np.fromstring(data,dtype=aubio.float_type)

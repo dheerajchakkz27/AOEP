@@ -1,13 +1,17 @@
 import keyboard
 
-while True:
-    if keyboard.read_key() == "p":
-        print("You pressed p")
-        break
+def pfun():
+    print("you pressed p")
+def rfun():
+    print("you pressed r")    
 
 while True:
-    if keyboard.is_pressed("q"):
+    if keyboard.read_key()=="p":
+        #pfun()
+        print(" you pressed p")
+    if keyboard.read_key()=="r":   
+        print(" you pressed r")
+        #rfun()   
+    if keyboard.read_key()=="q":
         print("You pressed q")
         break
-        
-keyboard.on_press_key("r", lambda _:print("You pressed r"))
